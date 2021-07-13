@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
 
 @Getter
 @Setter
@@ -18,6 +18,6 @@ public class Location {
     private Long id;
     private String description;
 
-    @OneToMany
+    @ManyToOne
     private AccessLevel accessLevel;
 }

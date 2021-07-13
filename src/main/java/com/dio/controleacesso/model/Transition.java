@@ -2,10 +2,7 @@ package com.dio.controleacesso.model;
 
 import lombok.*;
 
-import javax.persistence.Embeddable;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -24,7 +21,11 @@ public class Transition {
     private LocalDateTime dateIn;
     private LocalDateTime dateOut;
     private BigDecimal period;
+
+    @ManyToOne
     private Occurrence occurrence;
+
+    @ManyToOne
     private Calendar calendar;
 
     @AllArgsConstructor
