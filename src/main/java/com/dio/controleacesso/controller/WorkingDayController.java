@@ -44,7 +44,7 @@ public class WorkingDayController {
             workingDayService.deleteById(workingDayId);
         } catch (EmptyResultDataAccessException emptyResultDataAccessException) {
             System.out.println(emptyResultDataAccessException.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
         return new ResponseEntity<>(HttpStatus.OK);
