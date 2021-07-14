@@ -22,6 +22,14 @@ public class WorkingDayService {
         return workingDayRepository.save(workingDay);
     }
 
+    public WorkingDay update(WorkingDay workingDay) {
+        return workingDayRepository.save(workingDay);
+    }
+
+    public void deleteById(Long workingDayId) {
+        workingDayRepository.deleteById(workingDayId);
+    }
+
     public List<WorkingDay> findAll() {
         return workingDayRepository.findAll();
     }
