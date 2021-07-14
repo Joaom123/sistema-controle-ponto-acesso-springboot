@@ -30,11 +30,8 @@ dependencies {
     implementation 'io.springfox:springfox-swagger-ui:2.9.2'
     implementation 'io.springfox:springfox-bean-validators:2.9.2'
 
-//    implementation 'org.hibernate:hibernate-envers:5.4.17.Final'
-//    implementation 'org.hibernate:hibernate-validator:6.1.5.Final'
-
-//    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.7'
-//    runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'org.hibernate:hibernate-envers:5.5.3.Final'
+    implementation 'org.hibernate:hibernate-validator:7.0.1.Final'
 
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
